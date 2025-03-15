@@ -3,79 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Letter for Jamilla</title>
+    <title>Love Letter</title>
     <style>
         body {
-            background: url('https://cdn.pixabay.com/photo/2016/05/24/13/42/galaxy-1416922_960_720.jpg') no-repeat center center/cover;
+            background-color: pink;
+            font-family: 'Arial', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            color: white;
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            padding: 20px;
-            position: relative;
+            margin: 0;
+            flex-direction: column;
         }
-        .letter {
+        .card {
             background: pink;
-            color: black;
             padding: 30px;
             border-radius: 15px;
-            max-width: 600px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 500px;
             position: relative;
         }
         h1 {
+            color: red;
             font-size: 28px;
-            color: darkred;
+            font-family: 'Cursive', sans-serif;
         }
         p {
+            color: #333;
             font-size: 18px;
-            line-height: 1.6;
+            font-family: 'Georgia', serif;
         }
-        .flowers, .hearts {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background-size: cover;
+        .heart {
+            color: red;
+            font-size: 40px;
+            margin-top: 10px;
+            animation: heartbeat 1.5s infinite;
         }
-        .flowers {
-            top: 10px;
-            left: 10px;
-            background-image: url('https://cdn.pixabay.com/photo/2017/02/01/10/31/rose-2026261_960_720.png');
-        }
-        .hearts {
-            bottom: 10px;
-            right: 10px;
-            background-image: url('https://cdn.pixabay.com/photo/2016/11/18/15/09/heart-1839562_960_720.png');
-        }
-        .image-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .image-container img {
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
         }
     </style>
 </head>
 <body>
-    <div class="flowers"></div>
-    <div class="letter">
-        <div class="image-container">
-    
-       </div>
-        <h1>Dear Jamilla,</h1>
-        <p>
-            Hi Jamilla, I know it’s awkward or cringe for you, But just let me admire and appreciate you. 
-            If I have any regrets, it's that I didn't fight for you before. I hope you allow me to prove to you 
-            that not all love comes with pain. There's no pressure. I know you can't do it yet and I understand. 
-            But I want you to see that I can be the reason your heart opens up again. I cannot wait for the day we 
-            can be together every day. Thank you so much for making me in love again!
-        </p>
+    <div class="card" id="letter">
+        <h1>Hi Jamilla,</h1>
+        <p>I know it’s awkward or cringe for you, but just let me admire and appreciate you. If I have any regrets, it's that I didn't fight for you before. I hope you allow me to prove to you that not all love comes with pain.</p>
+        <p>There's no pressure. I know you can't do it yet and I understand. But I want you to see that I can be the reason your heart opens up again.</p>
+        <p>Thank you so much for making me in love again!</p>
+        <p><strong>Hope you appreciate it</strong></p>
+        <div class="heart">❤️</div>
     </div>
-    <div class="hearts"></div>
 </body>
 </html>
